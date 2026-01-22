@@ -300,9 +300,9 @@ func main() {
 		fmt.Fprintf(w, "</ul>")
 	})
 
-	fmt.Println("Server running di localhost:3005")
+	fmt.Println("Server running di localhost:8080")
 
-	err := http.ListenAndServe(":3005", nil)
+	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
 		fmt.Println("gagal running server")
 	}
